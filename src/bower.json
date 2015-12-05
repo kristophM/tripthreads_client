@@ -1,0 +1,23 @@
+{
+  "name": "tripthreads_client",
+  "version": "0.0.0",
+  "authors": [
+    "kristophM <krist.m@gmail.com>"
+  ],
+  "description": "TripThreads Fashion App",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "tripthreads.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-cookies": "~1.4.8"
+  }
+}

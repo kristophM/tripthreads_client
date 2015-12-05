@@ -1,0 +1,161 @@
+// Place all the styles related to the style_surveys controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.color-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.highlight-circle {
+  border-style: dashed;
+  border-color: white;
+  border-width: 5px;
+}
+
+.survey-panel {
+  display:none;
+}
+
+#destination_section {
+  display: none;
+}
+
+#destination_section:target {
+  display: block;
+}
+
+#climate_form {
+  display: none;
+}
+
+#climate_form:target {
+  display: block;
+}
+
+#purpose_section {
+  display: none;
+}
+
+#purpose_section:target {
+  display: block;
+}
+
+#style_type_section {
+  display: none;
+}
+
+#style_type_section:target {
+  display: block;
+}
+
+#colors_section {
+  display: none;
+}
+
+#colors_section:target {
+  display: block;
+}
+
+#patterns_section {
+  display: none;
+}
+
+#patterns_section:target {
+  display: block;
+}
+
+#brands_section {
+  display: none;
+}
+
+#brands_section:target {
+  display: block;
+}
+
+#age_section {
+  display: none;
+}
+
+#age_section:target {
+  display: block;
+}
+
+#looks_section {
+  display: none;
+}
+
+#looks_section:target {
+  display: block;
+}
+
+#look-basics {
+  display: none;
+}
+div[id^='look-basics']:target {
+  display: block;
+}
+
+div[id^='look-items'] {
+  display: none;
+}
+
+div[id^='look-items']:target {
+  display: block;
+}
+
+div[id^='jeans-types'] {
+  display: none;
+}
+
+div[id^='jeans-types']:target {
+  display: block;
+}
+
+div[id^='shoes-types'] {
+  display: none;
+}
+
+div[id^='shoes-types']:target {
+  display: block;
+}
+
+#jewelry-color {
+  display: none;
+}
+#jewelry-color:target {
+  display: block;
+}
+
+div[id^='jewelry-pieces'] {
+  display: none;
+}
+
+div[id^='jewelry-pieces']:target {
+  display: block;
+}
+
+#piercings {
+  display: none;
+}
+
+#piercings:target {
+  display: block;
+}
+
+#additional-info {
+  display: none;
+}
+
+#additional-info:target {
+  display: block;
+}
+
+#get-to-know-you {
+  display: none;
+}
+
+#get-to-know-you:target {
+  display: block;
+}

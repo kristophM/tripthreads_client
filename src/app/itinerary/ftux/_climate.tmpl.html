@@ -1,0 +1,11 @@
+<div id="climate-section">
+  <h2>What is the climate in {{destination.city}}?</h2>
+  <div layout="row" ng-repeat="cl in climates">
+    <div flex>
+      <label class="radio-inline">
+        <input type="radio">{{cl}}
+      </label>
+    </div>
+  </div>
+  <a ui-sref="get-started.destination">Previous</a>
+</div>
