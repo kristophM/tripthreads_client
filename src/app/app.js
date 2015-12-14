@@ -5,6 +5,7 @@ var TriphThreadsApp = angular.module('TripThreads', [
   'AuthModule',
   'DashboardModule',
   'FTUXModule',
+  'ngMaterial',
   //3rd Party modules
   'ui.router',
   'ngCookies'
@@ -14,7 +15,7 @@ var AuthModule = angular.module('AuthModule', ['ui.router', 'ngCookies']);
 var DashboardModule = angular.module('DashboardModule', ['ui.router']);
 var FTUXModule = angular.module('FTUXModule', ['ui.router']);
 
-TriphThreadsApp.config(function($stateProvider, $urlRouterProvider) {
+TriphThreadsApp.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
@@ -34,5 +35,10 @@ TriphThreadsApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'LoginCtrl',
       templateUrl: 'app/auth/login.tmpl.html'
     });
+
+    $mdThemingProvider.theme('default')
+      .primaryPalette('blue')
+      .accentPalette('blue-grey')
+      .warnPalette('orange')
 });
 // angular.module('TripThreads', [])

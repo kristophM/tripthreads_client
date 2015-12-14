@@ -1,3 +1,21 @@
+#ftux-get-started-wrapper h2 {
+  text-align: center;
+}
+// Replace radio buttons with style types
+#style-type input[type=radio] {
+  // display:none;
+}
+
+.style-type-radio {
+  width: 150px;
+  height: 150px;
+}
+
+.style-type-radio-selected {
+  filter: grayscale(100%);
+}
+
+
 // Replace checkboxes with color circles
 #preferred-colors input[type=checkbox] {
   display:none;

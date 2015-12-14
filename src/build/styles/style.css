@@ -1,3 +1,17 @@
+#ftux-get-started-wrapper h2 {
+  text-align: center;
+}
+
+.style-type-radio {
+  width: 150px;
+  height: 150px;
+}
+
+.style-type-radio-selected {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 #preferred-colors input[type=checkbox] {
   display: none;
 }

@@ -1,10 +1,12 @@
 <h2>Which style best describes you?</h2>
-<div layout="row" ng-repeat="sp in styleTypes">
-  <div flex>
-    <label class="radio-inline">
-      <input type="radio">{{sp}}
+<div id="style-type" layout="row" layout-wrap ng-init="styleType='blah'">
+  <div flex="33" ng-repeat="sp in availableStyleTypes">
+    <label>
+      <input type="radio" name="style-type" ng-model="styleType" ng-value="{{sp}}">
+      <img ng-src="app/assets/images/style-type/{{sp | lowercase}}.png" alt="{{sp}}"
+        class="style-type-radio" ng-class="{styleType: style-type-radio-selected}">
     </label>
   </div>
 </div>
-<a ui-sref="get-started.preferred-brands">Previous</a>
-<a ui-sref="get-started.preferred-colors">Next</a>
+<md-button class="md-raised md-warn" ui-sref="get-started.preferred-colors">Next</md-button>
+style type: {{styleType}}
