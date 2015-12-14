@@ -1,0 +1,11 @@
+<h2>Which colors do you like?</h2>
+<div id="preferred-colors" layout="row" ng-repeat="pc in preferredColors">
+  <div flex>
+    <div class="checkbox-inline">
+      <!-- Change below to ng-style -->
+      <input id="color-{{pc}}" type="checkbox"><label for="color-{{pc}}" style="background-color:{{pc}}"></label>
+    </div>
+  </div>
+</div>
+<a ui-sref="get-started.style-type">Previous</a>
+<a ui-sref="get-started.preferred-patterns">Next</a>

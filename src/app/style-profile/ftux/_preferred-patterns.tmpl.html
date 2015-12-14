@@ -1,0 +1,11 @@
+<h2>Which patterns do you like?</h2>
+<div id="preferred-patterns" layout="row" ng-repeat="pp in preferredPatterns">
+  <div flex>
+    <div class="checkbox-inline">
+      <!-- Change below to ng-style -->
+      <input id="pattern-{{pp}}" type="checkbox"><label for="pattern-{{pp}}">{{pp}}</label>
+    </div>
+  </div>
+</div>
+<a ui-sref="get-started.preferred-colors">Previous</a>
+<a ui-sref="get-started.preferred-brands">Next</a>

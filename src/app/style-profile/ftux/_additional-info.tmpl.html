@@ -1,0 +1,11 @@
+<h2>Anything else we should know?</h2>
+<div id="additional-info" layout="row" ng-repeat="fact in additionalFacts">
+  <div flex>
+    <div class="radio-inline">
+      <!-- Change below to ng-style -->
+      <input id="fact-{{fact}}" type="radio"><label for="fact-{{fact}}">{{fact}}</label>
+    </div>
+  </div>
+</div>
+<a ui-sref="get-started.age">Previous</a>
+<a ui-sref="get-started.preferred-brands">Next</a>

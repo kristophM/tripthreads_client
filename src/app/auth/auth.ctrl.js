@@ -13,6 +13,9 @@ AuthModule.controller('LoginCtrl', ['$scope', 'AuthFact', '$state', '$cookies', 
       else if (AuthFact.status === 401) {
         alert('You entered an incorrect email/password confirmation. Please try again.');
       }
+      else {
+        alert('There was an error communicating with the server. Please try again and contact customer service if the issue persists! (Error code: 1H)');
+      }
     },
     //Unsuccessful event response
     function() {

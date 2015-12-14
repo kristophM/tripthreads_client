@@ -1,0 +1,11 @@
+<h2>Which brands do you prefer?</h2>
+<div id="preferred-brands" layout="row" ng-repeat="pb in preferredBrands">
+  <div flex>
+    <div class="checkbox-inline">
+      <!-- Change below to ng-style -->
+      <input id="brand-{{$index}}" type="checkbox"><label for="brand-{{$index}}">{{pb}}</label>
+    </div>
+  </div>
+</div>
+<a ui-sref="get-started.preferred-patterns">Previous</a>
+<a ui-sref="get-started.age">Next</a>

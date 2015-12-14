@@ -1,0 +1,10 @@
+<h2>Which style best describes you?</h2>
+<div layout="row" ng-repeat="sp in styleTypes">
+  <div flex>
+    <label class="radio-inline">
+      <input type="radio">{{sp}}
+    </label>
+  </div>
+</div>
+<a ui-sref="get-started.preferred-brands">Previous</a>
+<a ui-sref="get-started.preferred-colors">Next</a>
